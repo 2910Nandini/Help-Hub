@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <title>Registration Form in HTML CSS</title> -->
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="/stylesheets/style2.css">
+</head>
+<body>
+  <section class="container">
+    <header>Registration Form</header>
+    <form action="/Register" class="form" method="post">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required name="fullName" />
+      </div>
+
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" required name="email" />
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="number" placeholder="Enter phone number" required name="phoneNumber" />
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter birth date" required name="birthDate" />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" value="male" checked />
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" value="female" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" value="preferNotToSay" />
+            <label for="check-other">Prefer not to say</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter address" required name="addressLine" />
+        <div class="column">
+          <input type="text" placeholder="Enter your city" required name="city" />
+        </div>
+        <div class="column">
+          <input type="text" placeholder="Enter your region" required name="region" />
+          <input type="number" placeholder="Enter postal code" required name="postalCode" />
+        </div>
+      </div>
+      <div class="select-box">
+        <select name="serviceType" required>
+          <option hidden>Which type of service u provide</option>
+          <option>Mechanic</option>
+          <option>Plumber</option>
+          <option>Electrician</option>
+          <option>Home tutor</option>
+          <option>Dance tutor</option>
+          <option>Caregiver</option>
+          <option>Gardener</option>
+          <option>Chef</option>
+          <option>Cleaner</option>
+          <option>Grooming</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label>Educational Qualification</label>
+        <input type="text" name="educationalQualification" placeholder="Enter completed degree" />
+      </div>
+
+      <div class="input-box">
+        <label>Experience</label>
+        <input type="number" name="experience" placeholder="Enter years of work experience" required />
+      </div>
+
+      <!-- <div class="img-box">
+          <label>Profile Picture</label>
+          <input type="file" placeholder="Upload passport-size photograph" accept=".jpg, .png" required  name="profilePicture"/>
+      </div> -->
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </section>
+</body>
+</html>

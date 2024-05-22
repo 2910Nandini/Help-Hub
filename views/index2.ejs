@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-HelpHub</title>
+    <link rel="stylesheet" href="/stylesheets/style3.css">
+    <link rel="stylesheet" href="/stylesheets/style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/javascripts/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">Helphub</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"></a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <!-- <li><a href="/">Home</a></li> -->
+                    <!-- <li><a href="/about">About</a></li> -->
+                    <!-- <li><a href="/v">Portfolio</a></li> -->
+                    <!-- <li><a href="/service">Services</a></li> -->
+                    <!-- <li><a href="/contact">Contact</a></li> -->
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Form code -->
+    <section class="wrapper">
+        <div class="form signup" id="signupForm">
+            <header>Signup</header>
+            <form action="/submitForm" method="POST">
+                <input type="text"  name ="fullname" placeholder="Full name" />
+                <input type="text" name ="email" placeholder="Email address" />
+                <input type="password" name ="password" placeholder="Password" />
+                <div class="checkbox">
+                    <input type="checkbox" id="signupCheck" />
+                    <label for="signupCheck">I accept all terms & conditions</label>
+                </div>
+                <input type="submit" value="Signup" />
+                
+            </form>
+        </div>
+        <div class="form login">
+            <header>Login</header>
+            <form action="/Login" method="post">
+                <input type="text" name="email" placeholder="Email address" />
+                <input type="password" name="password" placeholder="Password" />
+                <!-- <a href="#">Forgot password?</a> -->
+                <input type="submit" value="Login" />
+                <!-- Add the service provider button below -->
+                <a href="/serviceProvider"><input type="button" value="Sign as a Service Provider" class="service-provider-button"  />  </a>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
